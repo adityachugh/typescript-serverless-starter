@@ -1,0 +1,21 @@
+{
+  "name": "typescript-serverless-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.14.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "npm run build:dev",
+    "build:dev": "nodemon --ignore 'functions/' --exec \"npm run transpile && sls offline start\"",
+    "build:prod": "npm run transpile; sls deploy",
+    "transpile": "tsc -p ."
+  },
+  "author": "Aditya Chugh",
+  "license": "ISC"
+}
