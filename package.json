@@ -4,11 +4,13 @@
   "description": "",
   "main": "handler.js",
   "dependencies": {
-
+    "aws-sdk": "^2.62.0"
   },
   "devDependencies": {
-    "serverless-offline": "^3.14.0",
-    "nodemon": "^1.11.0"
+    "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^7.0.27",
+    "nodemon": "^1.11.0",
+    "serverless-offline": "^3.14.0"
   },
   "scripts": {
     "start": "npm run build:dev",
